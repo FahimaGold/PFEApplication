@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.pfe.Note">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#00c3f3"
+        android:elevation="0dp"
+        android:theme="@style/ToolBarStyle"
+        app:buttonGravity="bottom"
+        app:contentInsetLeft="20dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginBottom="4dp"
+        app:layout_goneMarginRight="200dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/noteTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="500dp"
+            android:gravity="center"
+            android:layout_marginTop="13dp"
+            android:background="@android:color/transparent"
+            android:text="Note"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/sauvegarderNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="480dp"
+            android:layout_marginTop="13dp"
+            android:background="@android:color/transparent"
+            android:text="Sauvegarder"
+            android:layout_marginRight="16dp"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            tools:ignore="InvalidId"
+            android:onClick="sauvNote"/>
+
+    </android.support.v7.widget.Toolbar>
+
+  <FrameLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <EditText
+          android:id="@+id/note"
+          android:layout_width="match_parent"
+          android:layout_height="500dp"
+          android:layout_marginTop="80dp"
+          android:gravity="top"
+          android:maxLength="120"
+
+          android:hint="Tapez ici..." />
+
+      <Button
+          android:id="@+id/afficherListeNotes"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="50dp"
+          android:layout_gravity="bottom"
+          android:layout_marginLeft="28dp"
+          android:layout_marginRight="28dp"
+          android:background="#089455"
+          android:onClick="goToNotesList"
+          android:text="Afficher notes"
+          android:textAllCaps="false"
+          android:textColor="#fff"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+  </FrameLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

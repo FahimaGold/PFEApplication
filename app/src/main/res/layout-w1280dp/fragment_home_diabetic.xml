@@ -1,0 +1,60 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.pfe.HomeDiabeticFragment"
+    tools:layout_editor_absoluteY="25dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:id="@+id/btnSuiviGlucose"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="170dp"
+        android:background="@android:color/transparent"
+        android:elevation="20dp"
+        android:foregroundGravity=""
+        android:onClick="allerSuiviSection"
+        android:src="@drawable/ic_suivi_1280"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnRegime"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="170dp"
+        android:background="@android:color/transparent"
+        android:elevation="20dp"
+        android:onClick="allerRegimeSection"
+        android:src="@drawable/ic_icon_nourriture_1280"
+        app:layout_constraintStart_toEndOf="@+id/btnSuiviGlucose"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnInfoDiabete"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="170dp"
+        android:background="@android:color/transparent"
+        android:onClick="allerInfoSection"
+        android:src="@drawable/ic_icon_info_1280"
+        app:layout_constraintStart_toEndOf="@+id/btnRegime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnTips"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="170dp"
+        android:background="@android:color/transparent"
+        android:onClick="allerConseilsSection"
+        android:src="@drawable/ic_icon_conseils_1280"
+        app:layout_constraintStart_toEndOf="@+id/btnInfoDiabete"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

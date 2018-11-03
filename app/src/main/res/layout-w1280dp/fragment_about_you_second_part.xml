@@ -1,0 +1,190 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.pfe.AboutYouSecondPartFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:src="@drawable/ic_suivi_sant"
+
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="86dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/roundedbutton"
+            android:padding="8dp"
+            android:text="Suivez votre santé"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:text="Date de naissance "
+        android:textColor="#0a2150"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dateDeNaissance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dateDeNaissance"
+        app:layout_constraintVertical_bias="0.516" />
+
+
+    <DatePicker
+        android:id="@+id/dateDeNaissance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="196dp"
+        android:layout_marginStart="360dp"
+        android:calendarTextColor="#0a2150"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:scaleX="0.85"
+        android:scaleY="0.75"
+        android:scrollbarSize="60dp"
+        android:solidColor="#eceff1"
+        android:theme="@style/AppTheme.Picker"
+        android:yearListSelectorColor="#00c85d"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <NumberPicker
+        android:id="@+id/tourDeTaille"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="8dp"
+        android:solidColor="#eceff1"
+        android:theme="@style/AppTheme.Picker"
+        app:layout_constraintStart_toEndOf="@+id/tv"
+        app:layout_constraintTop_toBottomOf="@+id/dateDeNaissance" />
+
+
+    <TextView
+        android:id="@+id/point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="548dp"
+        android:layout_marginTop="404dp"
+        android:text="cm"
+        android:textColor="#0a2150"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="136dp"
+        android:text="Tour de Taille "
+        android:textColor="#0a2150"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="68dp"
+        android:layout_marginTop="256dp"
+        android:text="Antécédents familiaux "
+        android:textColor="#0a2150"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/historique"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/historique"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="128dp"
+        android:layout_marginTop="256dp"
+        android:entries="@array/Historique"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginEnd="196dp"
+        android:layout_marginTop="36dp"
+        android:text="Fumeur "
+        android:textColor="#0a2150"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/fumeur"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Spinner
+        android:id="@+id/fumeur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginEnd="128dp"
+        android:layout_marginTop="40dp"
+        android:entries="@array/Fumer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/historique" />
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="204dp"
+        android:layout_marginTop="36dp"
+        android:text="Stress "
+        android:textColor="#0a2150"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/stress"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Spinner
+        android:id="@+id/stress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="128dp"
+        android:layout_marginTop="36dp"
+        android:entries="@array/Stress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fumeur" />
+</android.support.constraint.ConstraintLayout>

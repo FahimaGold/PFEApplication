@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.pfe.AboutYouSecondPart">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#00c3f3"
+        android:elevation="0dp"
+        android:theme="@style/ToolBarStyle"
+        app:buttonGravity="bottom"
+        app:contentInsetLeft="20dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginBottom="4dp"
+        app:layout_goneMarginRight="200dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/diabete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="500dp"
+            android:gravity="center"
+            android:layout_marginTop="13dp"
+            android:background="@android:color/transparent"
+            android:text="A propos de vous"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/suivantInscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="450dp"
+            android:layout_marginTop="13dp"
+            android:background="@android:color/transparent"
+            android:text="Suivant"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:onClick="inscrire"
+            tools:ignore="InvalidId" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/santeSectionPartTwo"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:elevation="2dp"
+        android:gravity="top"
+        android:background="#fff"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"></LinearLayout>
+</android.support.constraint.ConstraintLayout>

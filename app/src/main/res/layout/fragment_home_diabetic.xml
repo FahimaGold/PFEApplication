@@ -1,0 +1,66 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.pfe.HomeDiabeticFragment"
+    tools:layout_editor_absoluteY="25dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:id="@+id/btnSuiviGlucose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="65dp"
+        android:background="@android:color/transparent"
+        android:elevation="20dp"
+        android:onClick="allerSuiviSection"
+        android:src="@drawable/ic_suivi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="28dp" />
+
+    <ImageButton
+        android:id="@+id/btnRegime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="65dp"
+        android:background="@android:color/transparent"
+        android:onClick="allerRegimeSection"
+        android:elevation="20dp"
+        android:src="@drawable/ic_icon_nourriture"
+        app:layout_constraintStart_toEndOf="@+id/btnSuiviGlucose"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="32dp" />
+
+    <ImageButton
+        android:id="@+id/btnInfoDiabete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:onClick="allerInfoSection"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_icon_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSuiviGlucose"
+        android:layout_marginLeft="28dp" />
+
+    <ImageButton
+        android:id="@+id/btnTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_icon_conseils"
+        app:layout_constraintStart_toEndOf="@+id/btnInfoDiabete"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegime"
+        android:layout_marginLeft="32dp"
+        android:onClick="allerConseilsSection"/>
+
+
+</android.support.constraint.ConstraintLayout>

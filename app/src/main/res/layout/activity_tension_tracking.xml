@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.pfe.TensionTracking">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#00c3f3"
+        android:elevation="0dp"
+        android:theme="@style/ToolBarStyle"
+        app:buttonGravity="bottom"
+        app:contentInsetLeft="20dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginBottom="4dp"
+        app:layout_goneMarginRight="200dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/suiviTensionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="490dp"
+            android:gravity="center"
+            android:layout_marginTop="13dp"
+            android:background="@android:color/transparent"
+            android:text="Suivi de tension"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/sauvegarderTension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="410dp"
+            android:layout_marginTop="13dp"
+            android:background="@android:color/transparent"
+            android:text="Sauvegarder"
+            android:layout_marginRight="16dp"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            tools:ignore="InvalidId" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/suiviTensionSection"
+        android:layout_width="match_parent"
+        android:layout_height="660dp"
+        android:elevation="2dp"
+        android:gravity="top"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"></LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

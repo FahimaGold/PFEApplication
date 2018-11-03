@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="item1"
+        android:id="@+id/title1"
+        app:showAsAction="always"/>
+    <item
+        android:title="item2"
+        android:id="@+id/title2"
+        app:showAsAction="always"/>
+</menu>-->
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menuIdRecettes"
+        android:title="Recettes"
+        android:icon="@drawable/ic_icon_info"/>
+    <item
+        android:id="@+id/menuIdInfos"
+        android:title="Mes infos"
+        android:icon="@drawable/ic_icon_info"/>
+
+    <item
+        android:id="@+id/menuSeDeconnecter"
+        android:title="Se déconnecter"
+        android:icon="@drawable/ic_icon_info"/>
+</menu>

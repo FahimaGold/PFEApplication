@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.pfe.Inscription"
+    android:background="#fff">
+
+    <android.support.v7.widget.Toolbar
+    android:id="@+id/my_toolbar"
+    android:layout_width="0dp"
+    android:layout_height="70dp"
+    android:background="#00c3f3"
+    android:elevation="0dp"
+    android:theme="@style/ToolBarStyle"
+    app:buttonGravity="bottom"
+    app:contentInsetLeft="20dp"
+    app:contentInsetStart="0dp"
+    app:contentInsetStartWithNavigation="0dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_goneMarginBottom="4dp"
+    app:layout_goneMarginRight="200dp"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+    tools:ignore="MissingConstraints">
+
+    <Button
+            android:id="@+id/diabete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="500dp"
+            android:gravity="center"
+            android:layout_marginTop="13dp"
+            android:background="@android:color/transparent"
+            android:text="Inscription"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/insrciptionTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="460dp"
+            android:layout_marginTop="13dp"
+            android:background="@android:color/transparent"
+            android:text="Terminé"
+            android:onClick="allerAccueil"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            tools:ignore="InvalidId" />
+
+    </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/ic_user_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="510dp" />
+
+    <LinearLayout
+        android:id="@+id/inscriptionSection"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="-10dp"
+        android:background="#eceff1"
+        android:elevation="2dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" ></LinearLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

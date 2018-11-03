@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pc.pfe">
+
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="PFEApp"
+        android:manageSpaceActivity=".CreateAccount"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <receiver android:name=".AlarmReceiver" />
+        <receiver android:name=".NetworkStateChecker">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CreateAccount" />
+        <activity android:name=".AboutYou" />
+        <activity android:name=".Inscription" />
+        <activity android:name=".Home" />
+        <activity android:name=".GlucoseTracking" />
+        <activity android:name=".GlucoseGraphs" />
+        <activity android:name=".InfoOnDiabete" />
+        <activity android:name=".Regime" />
+        <activity android:name=".Breakfast" />
+        <activity android:name=".AboutYouSecondPart" />
+        <activity android:name=".Prediction" />
+        <activity android:name=".TrackingList" />
+        <activity android:name=".TensionTracking" />
+        <activity android:name=".TensionGraphs" />
+        <activity android:name=".HeightTracking" />
+        <activity android:name=".HeightGraphs" />
+        <activity android:name=".WeightTracking" />
+        <activity android:name=".WeightGraphs" />
+        <activity android:name=".WaistTracking" />
+        <activity android:name=".WaistGraphs" />
+        <activity android:name=".Login" />
+        <activity android:name=".Profile" />
+        <activity android:name=".MedicalInformation" />
+        <activity android:name=".Advice" />
+        <activity android:name=".ReceipeList" />
+        <activity android:name=".ReceipeOverview" />
+        <activity android:name=".Note" />
+        <activity android:name=".Collation" />
+        <activity android:name=".Dinner" />
+        <activity android:name=".HomeDiabetic" />
+        <activity android:name=".NoteList" />
+        <activity android:name=".PopUp" />
+
+        <service android:name=".services.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".SecondActivity" />
+
+
+        <service android:name=".services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
